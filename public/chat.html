@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/e3262d845e.js" crossorigin="anonymous"></script>
+    <title>Chatt.io - Room</title>
+</head>
+<body>
+    <div class="page page-chat">
+        <aside class="aside">
+            <div class="aside-header">
+                <p class="muted">Category</p>
+                <h1 id="category-name">General Discussion</h1>
+            </div>
+            <div class="users-heading">Users in the room</div>
+            <div class="users-list" id="users-list">
+                <p>Username</p>
+                <p>Username</p>
+                <p>Username</p>
+                <p>Username</p>
+                <p>Username</p>
+            </div>
+        </aside>
+        <div class="chat">
+            <div class="chat-header">
+                <div class="current-date" id="current-date">26 Feb</div>
+                <div class="clock" id="clock">12:56</div>
+                <a href="./index.html" class="btn-sm"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+            <div class="chat-list">
+                <div class="message">
+                    <span class="time">12:56</span>
+                    <span class="username">Brad</span>
+                    <p class="text">Hello everybody!</p>
+                </div>
+                <div class="message-my">
+                    <span class="time">12:56</span>
+                    <span class="username">Me</span>
+                    <p class="text">Hi! Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="message">
+                    <span class="time">12:56</span>
+                    <span class="username">Jack</span>
+                    <p class="text">Hello! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ipsam placeat blanditiis impedit? Veritatis sit quod hic, ullam possimus vel animi odio recusandae adipisci. Nisi perspiciatis quae deleniti deserunt error aliquam facilis.</p>
+                </div>
+            </div>
+            <div class="message-compose" id="message-compose">
+                <form action="#" class="form-message" id="form-message">
+                    <label for="text">Message: </label>
+                    <input type="text" name="text" id="text" class="message-input">
+                    <button type="submit" class="btn-send">Send<i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <p class="muted copyright">Project of <a href="http://roscand.com">RoscandDesign</a> - 2020</p>
+</body>
+</html>

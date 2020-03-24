@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3262d845e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Chatt.io - Connect with the world.</title>
+</head>
+<body>
+    <main class="page page-index">
+        <h1 class="label">Welcome to <span>Chatt.io</span>!</h1>
+        <p class="lead">To start chatting pick a username and choose a room to join:</p>
+        <form action="chat.html" class="form-join" id="form-join">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" autocomplete="off" placeholder="Pick a username" required autofocus>
+            </div>
+            <div class="form-group">
+                <label for="room">Room</label>
+                <select name="room" id="room">
+                    <option value="General">General discussion</option>
+                    <option value="News">News</option>
+                    <option value="Cooking">Cooking</option>
+                    <option value="Fasion">Fasion</option>
+                    <option value="Pets">Pets</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-lg">Join <i class="far fa-hand-point-right"></i></button>
+        </form>
+    </main>
+
+    <p class="muted copyright">Project of <a href="http://roscand.com">RoscandDesign</a> - 2020</p>
+</body>
+</html>
