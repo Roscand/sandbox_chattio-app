@@ -1,6 +1,6 @@
 :root {
     --primary: #f1935c;
-    --secondary: #ba6b57;
+    --secondary: #bd6942;
     --background: #20303f;
     --page: #30475e;
     --border: #ffffff30;
@@ -127,7 +127,7 @@ a:hover {
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -150,14 +150,14 @@ a:hover {
 }
 
 .form-group select {
-    margin: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     padding: 1rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
     font-size: 1.2rem;
     background-color: var(--background);
-    color: var(--text);
+    color: #3d5b79;
     background-image:
         linear-gradient(45deg, transparent 50%, rgba(128, 128, 128, 0.2) 50%),
         linear-gradient(135deg, rgba(128, 128, 128, 0.2) 50%, transparent 50%);
@@ -171,12 +171,12 @@ a:hover {
 }
 
 .btn-lg {
-    padding: 1rem;
-    border-radius: 5px;
-    font-size: 1.2rem;
     background-color: var(--page);
-    color: var(--background);
-    border: 1px solid var(--background);
+    color: var(--secondary);
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
 }
 
 .btn-lg:hover {
@@ -238,6 +238,10 @@ a:hover {
     overflow-y: scroll;
     height: 60vh;
     border-top-left-radius: 8px;
+}
+
+.users-list li {
+    list-style: none;
 }
 
 .users-heading {
@@ -329,15 +333,139 @@ a:hover {
 
 .btn-send {
     display: block;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     padding: .5rem;
     font-size: 1rem;
     margin-left: auto;
     border-radius: 5px;
     color: var(--background);
     width: 120px;
+    cursor: pointer;
 }
 
 .btn-send i {
     margin-left: .6rem;
+}
+
+.btn-send:hover {
+    background-color: var(--primary);
+}
+
+.btn-aside {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .page {
+        width: 100vw;
+        margin-top: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .label {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    .page .lead {
+        margin-top: .5rem;
+        text-align: center;
+        width: 80vw;
+    }
+
+    .form-join {
+        width: 90vw;
+    }
+
+    .copyright {
+        margin-bottom: 2rem;
+    }
+
+    .page-chat {
+        position: relative;
+    }
+
+    .aside {
+        position: absolute;
+        left: -100%;
+        opacity: 0;
+        top: 0;
+        z-index: 10;
+        width: 80vw;
+        height: 100vh;
+        transition: left .3s ease-out, opacity .3s ease-out;
+    }
+
+    .aside.isVisible {
+        opacity: 100;
+        left: 0%;
+    }
+
+    .aside-header {
+        margin-top: 3rem;
+    }
+
+    .btn-aside {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 12;
+        text-decoration: none;
+    }
+
+    .chat {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .chat-header {
+        height: 3rem;
+    }
+
+    .chat-header .btn-sm {
+        font-size: 1.2rem;
+    }
+
+    .clock {
+        font-size: 1.2rem;
+    }
+
+    .current-date {
+        font-size: .8rem;
+    }
+
+    .form-message label {
+        display: none;
+    }
+
+    .btn-send span {
+        display: none;
+    }
+
+    .btn-send i {
+        margin-left: 0;
+    }
+
+    .btn-send {
+        width: 50px;
+    }
+
+    .message-input {
+        margin: 0;
+        width: 70vw;
+    }
+
+    .chat .copyright {
+        display: none;
+    }
+
+    .chat-list .time {
+        margin-left: 0;
+    }
+
+    .chat-list .text {
+        margin-left: 1rem;
+    }
 }
